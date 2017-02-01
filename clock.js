@@ -2,14 +2,16 @@
 //function to return the time formated for use
 function getTime(){
     var time = new Date();
+    // variables for the normal clock
     var h = time.getHours();
     var m = time.getMinutes();
     var s = time.getSeconds();
     var d = Math.floor(time.getMilliseconds() / 100 );
     var c = Math.floor(time.getMilliseconds() / 10);
+   //variables for the reserse clock
     var hours = 23-time.getHours();
-	var minutes = 59-time.getMinutes();
-	var seconds = 59-time.getSeconds();
+	  var minutes = 59-time.getMinutes();
+	  var seconds = 59-time.getSeconds();
     var deciseconds = 9-Math.floor(time.getMilliseconds() / 100 );
 
     return {
@@ -19,6 +21,7 @@ function getTime(){
         's': s,
         'd': d,
         'c': c,
+        //for reserse clock
         'hours': hours,
         'minutes': minutes,
         'seconds': seconds,
@@ -56,9 +59,10 @@ function initializeClock(id) {
     hoursSpan.innerHTML = ('0' + time.hours).slice(-2);
   }
 
+//setting the time interval to centiseconds for the updated function to run
   updateClock();
   var timeinterval = setInterval(updateClock, 10);
 }
-
+//starting the clock
 initializeClock('clockdiv');
 
