@@ -27,8 +27,11 @@ I also used developer tools in chrome to do some trouble shooting of JavaScript 
 ###MVP(Minimum Viable Product) and Stretch Goals: 
 ###MVP
 - Create a web application that works like the Metronome Clock. 
+
 ###Stretch Goals
 - Adding styling features. 
+
 ###Contribution we'd like to be added:
 - Create a function for allowing the background to change color with the time change. 
+
 - One half would get darker as it moves towards 24 while the other half would get lighter as time moves towards 00. 
