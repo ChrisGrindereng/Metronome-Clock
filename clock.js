@@ -63,6 +63,8 @@ function initializeClock(id) {
   updateClock();
   var timeinterval = setInterval(updateClock, 10);
 }
+
+
 //starting the clock
 initializeClock('clockdiv');
 

@@ -2,55 +2,34 @@
         transition: all .25s ease;
     }
 
-    body {
-        color: orangered;
-        transition: background .25s ease;
-    }
+.jumbotron {
+    width: 100%;
+    color: orangered;
+    transition: background .25s ease; 
+    position: relative;
+    
+}
 
-    h1 {
-        position: fixed;        
-        margin: 0;
-        top: 30%;
-        left : 50%;
-        transform: translate(-50%, -50%);
-        font-size: 5vw;
-        text-align: center;
-    }
+.jumbotron img{
+    width: 100%;
+    height: 600px;
 
-    h1:after {
-        content: attr(hex);
-        display: block;
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
+}
 
-    .clockdiv{
-        position: fixed;
-        top: 50%;
-        left: 11.5%;
-        font-size: 8vw;
-    }
+.clockdiv{
+    position: absolute;
+    top: 31%;
+    left: 16.5%;
+    font-size: 88px;
+    text-shadow: 1px 3px 5px rgba(10,2,10,1);
+}
+
+
+}
 
 /*for future use*/
     .bar {
         border-top: .5vw solid darkgoldenrod;
         width: 100%;
         margin: 0 auto;
-    }
-
-    .pastMidnight{
-        background-color: #bff;
-        width:49.5%;
-        height: 600px;
-        display: inline-block;
-    }
-
-    .tillMidnight{
-        background-color: #003;
-        width:49.5%;
-        height: 600px;
-        display: inline-block;
-        
     }
