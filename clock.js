@@ -33,14 +33,21 @@ function getTime(){
 function initializeClock(id) {
   //normal clock
   var clock = document.getElementById(id);
+  var h1Span = clock.querySelector('.h1');
   var hSpan = clock.querySelector('.h');
+  var m1Span = clock.querySelector('.m1');
   var mSpan = clock.querySelector('.m');
+  var s1Span = clock.querySelector('.s1');
   var sSpan = clock.querySelector('.s');
   var dSpan = clock.querySelector('.d');
   var cSpan = clock.querySelector('.c');
+
  //reverse clock
+  var hours1Span = clock.querySelector('.hours1');
   var hoursSpan = clock.querySelector('.hours');
+  var minutes1Span = clock.querySelector('.minutes1');
   var minutesSpan = clock.querySelector('.minutes');
+  var seconds1Span = clock.querySelector('.seconds1');
   var secondsSpan = clock.querySelector('.seconds');
   var decisecondsSpan = clock.querySelector('.deciseconds');
 
@@ -49,14 +56,20 @@ function initializeClock(id) {
     var time = getTime(); 
     cSpan.innerHTML = (time.c - time.d *10);
     dSpan.innerHTML = time.d;
-    sSpan.innerHTML = ('0' + time.s).slice(-2);
-    mSpan.innerHTML = ('0' + time.m).slice(-2);
-    hSpan.innerHTML = ('0' + time.h).slice(-2);
+    sSpan.innerHTML = ('0' + time.s).slice(-1);
+    s1Span.innerHTML = ('0' + time.s).slice(-2, -1);
+    mSpan.innerHTML = ('0' + time.m).slice(-1);
+    m1Span.innerHTML = ('0' + time.m).slice(-2, -1);
+    hSpan.innerHTML = ('0' + time.h).slice(-1);
+    h1Span.innerHTML = ('0' + time.h).slice(-2, -1);
     // reserse clock
     decisecondsSpan.innerHTML = time.deciseconds;
-    secondsSpan.innerHTML = ('0' + time.seconds).slice(-2);
-    minutesSpan.innerHTML = ('0' + time.minutes).slice(-2);
-    hoursSpan.innerHTML = ('0' + time.hours).slice(-2);
+    secondsSpan.innerHTML = ('0' + time.seconds).slice(-1);
+    seconds1Span.innerHTML = ('0' + time.seconds).slice(-2, -1);
+    minutesSpan.innerHTML = ('0' + time.minutes).slice(-1);
+    minutes1Span.innerHTML = ('0' + time.minutes).slice(-2, -1);
+    hoursSpan.innerHTML = ('0' + time.hours).slice(-1);
+    hours1Span.innerHTML = ('0' + time.hours).slice(-2, -1);
   }
 
 //setting the time interval to centiseconds for the updated function to run
