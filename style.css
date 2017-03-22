@@ -16,6 +16,48 @@
 
 }
 
+.link{
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    top: 1%;
+    right: .5%;
+}
+
+.info{
+    width: 165px;
+    height: 165px;
+    position: absolute;
+    top: 1%;
+    right: .5%;
+    opacity: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vw;
+}
+
+.info:hover,
+.info:focus{
+    background-color: black;
+    opacity: .60;
+}
+
+.info p:hover,
+.info p:focus{
+    opacity: 1;
+    color: white;
+}
+
+.link img:hover,
+.link img:focus{
+    opacity: 0;
+}
+
+.link img{
+    width: 165px;
+    height:165px;
+}
+
 .clockdiv{
     position: absolute;
     top: 33%;
