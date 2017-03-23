@@ -13,9 +13,9 @@ JavaScript, CSS, HTML
 
 <img src="./Screenshots/MetronomeClock_Home.png"/>
 
-###Challenges Faced & Solutions Used: 
+### Challenges Faced & Solutions Used: 
 
-The biggest challenge I faced was setting up count down function of the clock. Solving this came down to selecting which of the many different date and time functions that exist in JavaScript. Ultimately I decided to use new Date() so I could apply the simple time functions like getHours() and then simply perform the proper mathematical operation on to return the time I needed.  
+The biggest challenge I faced was setting up count down function of the clock. Solving this came down to selecting which of the many different date and time objects provided in JavaScript. Ultimately I decided to use new Date() so I could apply the simple time functions like getHours() and then simply perform the proper mathematical operation on to return the time I needed.  
 
 <img src="./Screenshots/MetronomeClock_code.png"/>
 
